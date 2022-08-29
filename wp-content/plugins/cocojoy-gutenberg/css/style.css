@@ -1,0 +1,60 @@
+:root{
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteHeadings: 'Raleway', sans-serif;
+
+    /* Colores */
+    --azul: #162b4e;
+    --azul-claro: #4181E8;
+    --oscuro: #2E2E2E;
+    --gris: #514D4C;
+    --naranja: #E3572C;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --rojo: #dc1717;
+    --fondo: #E7E8E7;
+
+    --contenedor: 1200px;
+}
+.cajas-nosotros{
+    display: grid !important;
+}
+@media(min-width:768px){
+    .cajas-nosotros{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    } 
+}
+.cajas-nosotros .wp-block-column{
+    display: grid !important;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)) !important;
+    margin: 0 !important;
+}
+.wp-block-cocojoy-boxes{
+    height: 24rem;
+    padding: 4rem 2rem;
+    display: grid;
+    align-items: center;
+}
+.wp-block-cocojoy-boxes h2{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+}
+.wp-block-cocojoy-boxes p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.cajas-nosotros .wp-block-image{
+    height: 24rem;
+    margin: 0 !important;
+    overflow: hidden;
+}
+.wp-container-4{
+    gap: 0 !important;
+}
+.cajas-nosotros img{
+    display: block;
+    object-fit: cover;
+    height: 30rem;
+    width: 100%;
+}
